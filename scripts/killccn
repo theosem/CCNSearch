@@ -1,0 +1,7 @@
+#!/bin/sh
+
+CCND_PID=$(ps aux|grep ccnd | gawk '{print $2}')
+TERMINAL_PID=$(ps aux|grep gnome-terminal | gawk '{print $2}')
+#kill $CCND_PID
+kill  $TERMINAL_PID
+

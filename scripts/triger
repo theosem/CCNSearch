@@ -1,0 +1,7 @@
+#!/bin/sh
+
+dir_to_watch=$1
+query=$2
+HN=$(hostname)
+java -classpath /home/theosem/Desktop/demo/bin:/home/theosem/Desktop/demo/ccn.jar:/home/theosem/Desktop/demo/kxml2-2.3.0.jar:/home/theosem/Desktop/demo/bcprov-jdk16-143.jar:/home/theosem/Desktop/demo/caliph-emir-cbir.jar:/home/theosem/Desktop/demo/lire.jar  gr.iti.ccn.SearchCCN ${dir_to_watch}$query $HN
+

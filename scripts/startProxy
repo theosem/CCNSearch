@@ -1,0 +1,4 @@
+#!/bin/sh
+
+HN=$(hostname)
+java -jar /home/theosem/Desktop/demo/jars/ccnSearchProxy_v3_fat.jar /home/theosem/Desktop/sharedFiles/image.orig/ ccnx:/$HN/ ccnx:/search

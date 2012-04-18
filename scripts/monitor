@@ -1,0 +1,19 @@
+#!/bin/sh
+
+DIR_TO_WATCH=$1
+
+if ["$DIR_TO_WATCH" = ""];then
+echo "please provide a path to watch"
+echo "usage: monitor /dir_to_watch"
+exit
+fi
+echo "monitoring started.."
+echo "watching: $DIR_TO_WATCH"
+
+#while(true)
+#do
+echo "OK waiting for some action..."
+query=$(inotifywait -e moved_to -rqc $DIR_TO_WATCH | awk -F"," '{print $3 }') 
+gnome-terminal -x triger $DIR_TO_WATCH $query &
+#done
+

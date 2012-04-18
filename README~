@@ -1,0 +1,25 @@
+This is CCNSearch README file
+------------------------------------
+please read LICENSE file
+
+-------------------------------------------------------------------------------
+If use this software please cite one of the following papers:
+
+P. Daras, T. Semertzidis, L. Makris, M. G. Strintzis, "Similarity Content Search in Content Centric Networks" Acm Multimedia 2010, Firenze, Italy, October 2010
+
+T. Semertzidis, P. Daras, P. Moore, L. Makris, M. G. Strintzis, "Automatic creation of 3D environments from a single sketch using Content Centric Networks", Communications Magazine, IEEE , vol.49, no.3, pp.152-157, March 2011, doi: 10.1109/MCOM.2011.5723813
+------------------------------------------------------------------------------
+
+Dependencies:
+- ccnx-0.2.0 . We didn't test it with the newer versions of ccnx but we plan to do it.
+- inotify tools, if you need to integrate it in your desktop
+ 
+Usage:
+In the scripts folder there are some scripts that start the needed services and applications
+Please before using them set the appropriate paths and jar names as needed.
+
+
+1. first run startccn to start:
+	 fileProxy (available in ccnx.org releases)
+	SearchProxy
+
